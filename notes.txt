@@ -1,0 +1,32 @@
+# Solvation in Experimental and Computational Chemistry
+
+## Literature
+
+### Experimental
+
+Books:
+- **Solvent Effects in Chemistry** Erwin Buncel, Robert A. Stairs
+- **Solvents and Solvent Effects in Organic Chemistry** Christian Reichardt and Thomas Welton
+
+### Computational
+
+Books:
+- **Continuum Solvation Models in Chemical Physics**
+
+Papers:
+
+
+## Brainstorm
+
+Examples of solvent effects:
+- Solvent effects on Sn2 reaction
+
+General chemistry:
+- Types of molecular interactions in solution
+- Mechanisms for the dissolution of solids
+- Colligative properties
+
+Computational:
+- Bene's lectures
+- Quantum mechanical models for solvation. This includes implicit and explicit models
+- Monte Carlo and Molecular Dynamics?
