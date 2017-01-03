@@ -1,0 +1,37 @@
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+.title[Solvation in Experimental and Computational Chemistry]
+
+.author[Roberto Di Remigio]
+
+.institution[UiT -- The Arctic University of Norway]
+
+.date[16 January 2017, Tromsø]
+
+.footnote[[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) licensed.
+Browse slides at [http://tinyurl.com/trial-lecture](http://tinyurl.com/trial-lecture)]
+
+???
+
+---
+
+layout: false
+
+## Acknowldegements
+
+---
+name: last-page
+template: inverse
+
+## Thanks for your attention!
+
+Slideshow created using [remark] and served using [cicero]
+
+Slides available on [GitHub](https://github.com/robertodr/trial-lecture)
+
+Browse slides at [http://tinyurl.com/trial-lecture](http://tinyurl.com/trial-lecture)]
+
+[remark]: https://github.com/gnab/remark
+[cicero]: https://github.com/bast/cicero
