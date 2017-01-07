@@ -2,11 +2,11 @@ name: inverse
 layout: true
 class: center, middle, inverse
 ---
-.title[Solvation in Experimental and Computational Chemistry]
+## Solvation in Experimental and Computational Chemistry
 
 .author[Roberto Di Remigio]
 
-.institution[UiT -- The Arctic University of Norway]
+.institution[UiT - The Arctic University of Norway]
 
 .date[16 January 2017, Tromsø]
 
@@ -14,6 +14,312 @@ class: center, middle, inverse
 Browse slides at [http://tinyurl.com/trial-lecture](http://tinyurl.com/trial-lecture)]
 
 ???
+
+---
+layout: false
+
+.left-column[
+  ## Outline
+]
+.right-column[
+  - Solvents and Solvation
+    - What Is Solvation?
+    - Solute-Solvent Interactions
+
+
+  - Solvent Effects: Experiment and Computation
+    - Thermodynamics
+    - Kinetics
+    - Spectroscopy
+
+
+  - Three Not-So-Easy Pieces
+    - Why Is Mercury Liquid?
+    - What Is Solvatochromism?
+    - The Morita-Baylis-Hillman Reaction
+]
+
+---
+class: center, middle, inverse
+
+# Solvents and Solvation
+
+---
+layout: false
+
+<div class="imageWrapper">
+  <img class="overlayImage" src="images/goldbook-solvation.png" style="width: 100%" align="middle">
+--
+  <img class="overlayImage" src="images/solvation-map.png" style="width: 60%" align="right">
+</div>
+
+
+---
+layout: false
+class: split-50-50
+
+## The Problem of Solvation
+
+.column[
+<font color="red">
+Solvent effects
+</font>
+<p style="clear: both;">
+- Direct
+- Indirect
+- Local field
+- Dynamic
+- Specific
+
+Free energy:
+  `$$ G = G_\mathrm{el} + G_\mathrm{dis} + G_\mathrm{rep} + G_\mathrm{Mm}(T) $$`
+
+**Balanced description** needed to reproduce/predict experiments!
+]
+.column[
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 45%"></p>
+<p style="clear: both;">
+]
+
+<font color="red">
+Problems
+</font>
+<p style="clear: both;">
+
+- Size \\(\Leftrightarrow\\) accurate _ab initio_ not possible
+- Conformations \\(\Leftrightarrow\\) statistical sampling
+
+???
+
+- Chemistry is a wet science: experiments mostly happen in solution.
+- We can classify solvent effects as:
+  * Direct: these effects stem straightforwardly from the modification
+    underwent by the solute electronic density when interacting with the
+    environment.
+  * Indirect: it is common for solutes to exhibit different minimum-energy
+    conformations in different environments. These effects are commonly
+    labelled as indirect.
+  * Local field: light-matter interactions are also affected by the
+    environment. Local modifications of externally applied fields subtly
+    influence molecular responses.
+  * Dynamic: the presence of the environment radically influences excited
+    states, since relaxation processes in the medium become important.
+  * Specific:  This catch-all category includes all effects stemming from the
+    peculiar solute-solvent pair interactions that cannot be fully described
+    under any of the previous labels. In general, modelling such effects
+    demands an atomistic level of detail.
+- Size is a huge problem. It is simply not possible to model large systems very
+  accurately.
+- Moreover, the conformational space is very large and needs to be sampled
+  extensively to have meaningful results.
+- Energy decomposition.
+
+<font color="red">
+<center>Once again, approximations needed!!!</center>
+</font>
+<p style="clear: both;">
+
+---
+class: center, middle, inverse
+
+# Solvent Effects:
+# Experiment and Computation
+
+---
+layout: false
+class: split-50-50
+## Multiscale models.red[<sup>1</sup>]
+
+- Use **quantum** and **classical** physics together:
+  * quantum for chemically relevant subsystem
+  * classical for the environment
+
+.column[
+<p style="text-align:center;"><img src="images/gfp_barrel.png" style="width: 100%"></p>
+<p style="clear: both;">
+]
+.column[
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QMMM.png" style="width: 50%"></p>
+<p style="clear: both;">
+]
+
+.footnote[.red[<sup>1</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
+
+???
+
+- The idea of multiscale models is to _focus_ on the chemically relevant part
+  of the system and treat the environment approximately.
+
+---
+layout: false
+class: split-60-40
+## QM/MM.red[<sup>2</sup>]
+
+- Use **quantum** and **classical** physics together:
+  * quantum for chemically relevant subsystem
+  * _classical multipoles_ for the environment
+
+.column[
+- Nonpolarizable MM
+- Polarizable MM
+- Chemical detail
+- Dispersion and repulsion approximate
+- Statistical sampling and averaging
+- MM region _cutoff radius_?
+]
+.column[
+<p style="text-align:right;"><img src="images/pyridine+water_12AA_QMMM.png" style="width: 40%"></p>
+<p style="clear: both;">
+]
+
+.footnote[.red[<sup>1</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
+
+???
+
+- Nonpolarizable MM only has static multipoles. Thus no polarization.
+- Polarizable MM has static multipoles + polarizable dipoles.
+- Dispersion and repulsion added as classical force fields (Lennard--Jones)
+- Run MD simulation to obtain snapshots. Run QM/MM. Average.
+- How large does the MM region need to be?
+
+---
+layout: false
+class: split-60-40
+
+## QM/Continuum.red[<sup>2</sup>]
+
+- Use **quantum** and **classical** physics together:
+  * quantum for chemically relevant subsystem
+  * _continuum dielectric_ for the environment
+
+.column[
+- **Exact** electrostatics
+- Self-consistent polarization
+- **No** chemical detail
+- Dispersion and repulsion approximate
+- Statistically averaged _by construction_
+]
+.column[
+<p style="text-align:right;"><img src="images/pyridine_Continuum.png" style="width: 40%"></p>
+<p style="clear: both;">
+]
+
+.footnote[.red[<sup>2</sup>] J. Tomasi, B. Mennucci, R. Cammi, _Chem. Rev._, __105__, 2999, (2005)]
+
+???
+
+---
+layout: false
+class: split-60-40
+
+## Best of both worlds: QM/MM/Continuum.red[<sup>3</sup>]
+
+- Use **quantum** and **classical** physics together:
+  * quantum for chemically relevant subsystem
+  * _classical multipoles_ for the environment in inner region
+  * _continuum dielectric_ for the environment in outer region
+
+.column[
+- Chemical detail in _short range_
+- Exact _long-range_ electrostatics
+- Dispersion and repulsion approximate
+- Statistical sampling and averaging
+- MM region _cutoff radius_?
+]
+.column[
+<p style="text-align:right;"><img src="images/pyridine+water_12AA_QMMMContinuum.png" style="width: 40%"></p>
+<p style="clear: both;">
+]
+
+.footnote[.red[<sup>3</sup>] A. H. Steindal, K. Ruud, L. Frediani, K. Aidas, J. Kongsted, _J. Phys. Chem. B_, __115__, 3027, (2011)]
+
+???
+
+---
+class: center, middle, inverse
+
+# Three Not-So-Easy Pieces
+
+---
+layout: false
+
+## Why Is Mercury Liquid?.red[<sup>2</sup>]
+
+.footnote[.red[<sup>2</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed Engl._ (2013), __52__, 7583]
+
+---
+layout: false
+
+## What Is Solvatochromism?.red[<sup>3</sup>]
+
+.footnote[.red[<sup>3</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
+
+---
+layout: false
+
+## The Morita-Baylis-Hillman Reaction.red[<sup>4</sup>]
+
+<p style="text-align:center;"><img src="images/MBH_general_scheme.png" style="width: 80%"></p>
+<p style="clear: both;">
+
+A versatile coupling reaction:
+1. Easily prepared starting materials
+2. Useful in asymmetric syntheses
+3. Highly functionalized product
+4. Organocatalyzed
+
+.footnote[.red[<sup>4</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811
+
+Figure by Wonseokham09 at [English Wikipedia](https://commons.wikimedia.org/w/index.php?curid=48339637), CC BY-SA 3.0
+]
+
+---
+layout: false
+
+.left-column[
+  ## Conclusions
+
+  - Obvious
+]
+.right-column[
+  - Chemistry is a wet science
+    - Solvent effects are ubiquitous
+    - Understanding solvent effects is key
+
+
+  - Experimentally
+    - bla
+
+
+  - Computationally
+    - more bla
+]
+
+---
+layout: false
+
+.left-column[
+  ## Conclusions
+
+  - Obvious
+  - Not-So-Obvious
+]
+.right-column[
+  - Computation
+    - Definitely not a blackbox
+
+
+  - Experiment
+    - Time-consuming
+    - Ambiguous interpretations
+
+
+  - _Sinergistic_ approaches needed
+    - __What__?
+    - __Why__?
+    - __How__?
+    - Pinpoint useful _vs_ useless _vs_ harmful models
+]
 
 ---
 
