@@ -22,21 +22,33 @@ layout: false
   ## Outline
 ]
 .right-column[
-  - Solvents and Solvation
+  - **Solvents and Solvation**
     - What Is Solvation?
     - Solute-Solvent Interactions
 
 
-  - Solvent Effects: Experiment and Computation
+  - **Solvent Effects: Experiment and Computation**
     - Thermodynamics
     - Kinetics
     - Spectroscopy
 
 
-  - Three Not-So-Easy Pieces
+  - **Three Not-So-Easy Pieces**
     - Why Is Mercury Liquid?
     - What Is Solvatochromism?
     - The Morita-Baylis-Hillman Reaction
+]
+<p style="clear: both;">
+.left-column[
+  ### General References
+]
+.right-column[
+<p style="clear: both;">
+  Reichardt, C.; Welton, T. _Solvents and Solvent Effects in Organic Chemistry_; Wiley, (2010)
+
+  Hansen, J. P.; McDonald, I. R. _Theory of Simple Liquids_; Elsevier Science, (2013)
+
+  Mennucci, B.; Cammi, R. _Continuum Solvation Models in Chemical Physics_; Wiley, (2008)
 ]
 
 ---
@@ -53,12 +65,139 @@ layout: false
   <img class="overlayImage" src="images/solvation-map.png" style="width: 60%" align="right">
 </div>
 
+???
+
+- What is solvation? This is the IUPAC Gold Book definition. Point out that it
+  involves the microscopic interactions of two (or more) different moieties,
+  the excess one being called the solvent.
+- Solvation is central in chemistry due to the fact that most chemical processes happen in a solvent.
+- Understanding the role of solvents and solvation in chemistry is not an easy task, since solutions are liquid systems.
+- Liquids are _partially_ disordered systems, where the structure and
+  regularity of solids might still be present, to a limited extent, but higher
+  mobility and long-range disorder dominate the physical and chemical
+  properties.
+
+---
+layout: false
+
+## James Bond Cocktail.red[<sup>1</sup>]
+
+<p style="text-align:center;"><img src="images/james-bond-cocktail.png" style="width: 100%"></p>
+<p style="clear: both;">
+
+.footnote[.red[<sup>1</sup>] Eckelmann, J.; Lüning, U. _Chem. unserer Zeit_ (2009), __43__, 210]
+
+???
+
+- Starting from perfluoroheptane, saturated aqueous potassium carbonate
+  solution, methanol, toluene and suitable dyes, a three-phasic mixture is
+  prepared initially. After shaking – not only stirring – four layers develop.
+  Addition of pentane changes the sequence of two layers.
+
+---
+layout: false
+class: split-50-50
+
+## The Liquid Phase
+
+.column[
+Liquids and solutions:
+- Partially ordered systems
+- High mobility
+- Dynamical picture
+<p style="text-align:center;"><img src="images/Rdf_schematic.jpg" style="width: 45%"></p>
+<p style="clear: both;">
+]
+.column[
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 45%"></p>
+<p style="clear: both;">
+]
+
+???
+
+---
+layout: false
+class: split-50-50
+
+## Radial Distribution Function
+
+Probability of finding a particle at distance \\(r\\) away from a given reference,
+relative to that for an ideal gas
+
+- Describes density variations with distance
+- Experimentally observable
+- Computationally accessible
+
+.column[
+<p style="text-align:left;"><img src="images/gasAr.png" style="width: 85%"></p>
+]
+.column[
+<p style="text-align:right;"><img src="images/solidAr.png" style="width: 45%"></p>
+]
+<p style="clear: both;">
+
+???
+
+- \\(g(r)\\) describes how density varies as a function of distance from a
+  reference particle.
+- X-ray or neutron scattering can be used to determine the structure factor
+  \\(S(q)\\), related to \\(g(r)\\)
+- Monte Carlo, molecular dynamics, integral equations theory
+- Solute-solvent interactions are ultimately the key to understand solvation
+  and solvent effects. These can be rationalized in terms of intermolecular
+  interactions: electrostatic and van der Waals forces being prominent.
+  However, _specific effects_, such as _hydrogen bond formation_ can become
+  significant and distinctly influence the chemistry of the solvated system.
+
+---
+layout: false
+
+## Solute-Solvent Interactions
+
+---
+layout: false
+class: split-30-70
+
+## A Microscopic View
+
+.column[
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 70%"></p>
+<p style="clear: both;">
+]
+.column[
+The energy of a molecule-solvent cluster:
+`
+$$
+E(M\cdot S_n) = \sum_{K}^{n+1} E_K^0 + \Delta E_\mathrm{el} + \Delta E_\mathrm{pol} + \Delta E_\mathrm{rep} + \Delta E_\mathrm{dis}
+$$
+`
+<p style="clear: both;">
+]
+
+- \\(E_K^0\\) energy of the isolated \\(K\\)-th molecule
+- \\(\Delta E_\mathrm{el}\\) electrostatic
+- \\(\Delta E_\mathrm{pol}\\) mutual polarization
+- \\(\Delta E_\mathrm{rep}\\) Pauli repulsion
+- \\(\Delta E_\mathrm{dis}\\) dispersion
+
+
+
+---
+class: center, middle, inverse
+
+# Solvent Effects:
+# Experiment and Computation
 
 ---
 layout: false
 class: split-50-50
 
 ## The Problem of Solvation
+
+Aspects computational models need to capture
+- Dynamical nature of solvation
+- Average nature
+- Multiplicity of interactions
 
 .column[
 <font color="red">
@@ -71,23 +210,12 @@ Solvent effects
 - Dynamic
 - Specific
 
-Free energy:
-  `$$ G = G_\mathrm{el} + G_\mathrm{dis} + G_\mathrm{rep} + G_\mathrm{Mm}(T) $$`
-
 **Balanced description** needed to reproduce/predict experiments!
 ]
 .column[
 <p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 45%"></p>
 <p style="clear: both;">
 ]
-
-<font color="red">
-Problems
-</font>
-<p style="clear: both;">
-
-- Size \\(\Leftrightarrow\\) accurate _ab initio_ not possible
-- Conformations \\(\Leftrightarrow\\) statistical sampling
 
 ???
 
@@ -112,22 +240,105 @@ Problems
   accurately.
 - Moreover, the conformational space is very large and needs to be sampled
   extensively to have meaningful results.
-- Energy decomposition.
 
-<font color="red">
-<center>Once again, approximations needed!!!</center>
-</font>
+---
+layout: false
+
+## Thermodynamics
+
+<p style="text-align:right;"><img src="images/sn2.png" style="width: 40%"></p>
 <p style="clear: both;">
 
 ---
-class: center, middle, inverse
+layout: false
 
-# Solvent Effects:
-# Experiment and Computation
+## Kinetics
+
+<p style="text-align:right;"><img src="images/nucleophilic.png" style="width: 40%"></p>
+<p style="clear: both;">
+
+---
+layout: false
+
+## Spectroscopy
+
+<p style="text-align:center;"><img src="images/excitation-solution.svg" style="width: 70%"></p>
+<p style="clear: both;">
+
+???
 
 ---
 layout: false
 class: split-50-50
+
+## Solvent Dynamics: Time-Dependent Stokes Shift
+
+.column[
+<p style="text-align:center;"><img src="images/td-stokes.svg" style="width: 80%"></p>
+<p style="clear: both;">
+]
+.column[
+<p style="text-align:center;"><img src="images/td-fluorescence.svg" style="width: 50%"></p>
+
+`
+$$
+S_\nu(t) = \frac{\nu(t) - \nu(\infty)}{\nu(0) - \nu(\infty)}
+$$
+`
+<p style="clear: both;">
+]
+
+???
+
+---
+layout: false
+
+## The Curse of Dimensionality
+
+.left-column[
+- Dynamics
+- Averaging
+- Interactions
+]
+.right-column[
+Computational models for solvation
+ 1. Integral equation theories
+ 2. Simulation of classical liquids
+ 3. Supermolecular cluster models
+ 4. Quantum/classical multiscale models
+
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 45%"></p>
+<p style="clear: both;">
+]
+
+???
+
+- Chemistry is a wet science: experiments mostly happen in solution.
+- We can classify solvent effects as:
+  * Direct: these effects stem straightforwardly from the modification
+    underwent by the solute electronic density when interacting with the
+    environment.
+  * Indirect: it is common for solutes to exhibit different minimum-energy
+    conformations in different environments. These effects are commonly
+    labelled as indirect.
+  * Local field: light-matter interactions are also affected by the
+    environment. Local modifications of externally applied fields subtly
+    influence molecular responses.
+  * Dynamic: the presence of the environment radically influences excited
+    states, since relaxation processes in the medium become important.
+  * Specific:  This catch-all category includes all effects stemming from the
+    peculiar solute-solvent pair interactions that cannot be fully described
+    under any of the previous labels. In general, modelling such effects
+    demands an atomistic level of detail.
+- Size is a huge problem. It is simply not possible to model large systems very
+  accurately.
+- Moreover, the conformational space is very large and needs to be sampled
+  extensively to have meaningful results.
+
+---
+layout: false
+class: split-50-50
+
 ## Multiscale models.red[<sup>1</sup>]
 
 - Use **quantum** and **classical** physics together:
@@ -209,33 +420,6 @@ class: split-60-40
 ???
 
 ---
-layout: false
-class: split-60-40
-
-## Best of both worlds: QM/MM/Continuum.red[<sup>3</sup>]
-
-- Use **quantum** and **classical** physics together:
-  * quantum for chemically relevant subsystem
-  * _classical multipoles_ for the environment in inner region
-  * _continuum dielectric_ for the environment in outer region
-
-.column[
-- Chemical detail in _short range_
-- Exact _long-range_ electrostatics
-- Dispersion and repulsion approximate
-- Statistical sampling and averaging
-- MM region _cutoff radius_?
-]
-.column[
-<p style="text-align:right;"><img src="images/pyridine+water_12AA_QMMMContinuum.png" style="width: 40%"></p>
-<p style="clear: both;">
-]
-
-.footnote[.red[<sup>3</sup>] A. H. Steindal, K. Ruud, L. Frediani, K. Aidas, J. Kongsted, _J. Phys. Chem. B_, __115__, 3027, (2011)]
-
-???
-
----
 class: center, middle, inverse
 
 # Three Not-So-Easy Pieces
@@ -278,6 +462,8 @@ layout: false
 ---
 layout: false
 
+<p style="text-align:center;"><img src="images/excitation-solution.svg" style="width: 80%"></p>
+<p style="clear: both;">
 
 ---
 layout: false
