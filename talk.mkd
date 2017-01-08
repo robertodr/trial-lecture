@@ -245,14 +245,39 @@ layout: false
 
 ## Why Is Mercury Liquid?.red[<sup>2</sup>]
 
+<p style="text-align:center;"><img src="images/Hg-RvsNR-melting.gif" style="width: 50%"></p>
+<p style="clear: both;">
+
 .footnote[.red[<sup>2</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed Engl._ (2013), __52__, 7583]
+
+---
+
+<p style="text-align:center;"><img src="images/Hg-RvsNR-PESs.gif" style="width: 50%"></p>
+<p style="clear: both;">
+
+---
+
+<p style="text-align:center;"><img src="images/Hg-cluster-melting.gif" style="width: 50%"></p>
+<p style="clear: both;">
+
+---
+
+<p style="text-align:center;"><img src="images/Hg-bulk-melting.gif" style="width: 50%"></p>
+<p style="clear: both;">
 
 ---
 layout: false
 
 ## What Is Solvatochromism?.red[<sup>3</sup>]
 
+<p style="text-align:center;"><img src="images/solvatochromism.png" style="width: 80%"></p>
+<p style="clear: both;">
+
 .footnote[.red[<sup>3</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
+
+---
+layout: false
+
 
 ---
 layout: false
@@ -272,6 +297,16 @@ A versatile coupling reaction:
 
 Figure by Wonseokham09 at [English Wikipedia](https://commons.wikimedia.org/w/index.php?curid=48339637), CC BY-SA 3.0
 ]
+
+---
+
+<p style="text-align:center;"><img src="images/MBH_overall_mechanism.png" style="width: 100%"></p>
+<p style="clear: both;">
+
+---
+
+<p style="text-align:center;"><img src="images/MBH_elimination_mechanism.png" style="width: 100%"></p>
+<p style="clear: both;">
 
 ---
 layout: false
@@ -314,7 +349,7 @@ layout: false
     - Ambiguous interpretations
 
 
-  - _Sinergistic_ approaches needed
+  - _Synergistic_ approaches needed
     - __What__?
     - __Why__?
     - __How__?
@@ -325,7 +360,7 @@ layout: false
 
 layout: false
 
-## Acknowldegements
+## Acknowledgements
 
 ---
 name: last-page
@@ -337,7 +372,7 @@ Slideshow created using [remark] and served using [cicero]
 
 Slides available on [GitHub](https://github.com/robertodr/trial-lecture)
 
-Browse slides at [http://tinyurl.com/trial-lecture](http://tinyurl.com/trial-lecture)]
+Browse slides at [http://tinyurl.com/trial-lecture](http://tinyurl.com/trial-lecture)
 
 [remark]: https://github.com/gnab/remark
 [cicero]: https://github.com/bast/cicero
