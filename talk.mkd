@@ -408,7 +408,7 @@ class: split-50-50
 ## Thermodynamics
 
 .column[
-<p style="text-align:right;"><img src="images/equilibrium.svg" style="width: 80%"></p>
+<p style="text-align:left;"><img src="images/equilibrium.svg" style="width: 90%"></p>
 <p style="clear: both;">
 ]
 .column[
@@ -447,7 +447,7 @@ class: split-50-50
 ## \\(\beta\\)-Diketones Keto-Enol Tautomerism.red[<sup>5</sup>]
 
 .column[
-<p style="text-align:right;"><img src="images/Acetylacetone_keto-enol_tautomerism.svg" style="width: 80%"></p>
+<p style="text-align:left;"><img src="images/Acetylacetone_keto-enol_tautomerism.svg" style="width: 80%"></p>
 <p style="clear: both;">
 ]
 .column[
@@ -471,11 +471,34 @@ class: split-50-50
 
 ---
 layout: false
+class: split-50-50
 
 ## Kinetics
 
-<p style="text-align:right;"><img src="images/nucleophilic.png" style="width: 40%"></p>
+.column[
+<p style="text-align:left;"><img src="images/kinetics.svg" style="width: 80%"></p>
 <p style="clear: both;">
+]
+.column[
+<p style="text-align:right;"><img src="images/nucleophilic.png" style="width: 50%"></p>
+<p style="clear: both;">
+]
+
+Solvent effects on reaction rates
+ - _Static_
+ - _Dynamic_
+
+???
+
+Solvent effects on reaction rates
+ - _Static_: differential solvation of reactants and activated complex.
+   This modifies the activation free energy, enthalpy and entropy, affecting the rate.
+   The basic assumption is that of equilibrium between reactants and activated
+   complex, which in turn means that solvent orientational relaxation happens
+   on time scales shorter than the activation process.
+ - _Dynamic_: anything that happens because the assumption of fast
+   orientational relaxation breaks down. In this case the solvent actually
+   participates in the reaction.
 
 ---
 layout: false
