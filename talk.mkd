@@ -115,6 +115,10 @@ Liquids and solutions:
 
 ???
 
+- The interactions between species in solvents (and in solutions) are at once
+  too strong to be treated by the laws of the kinetic theory of gases, yet too
+  weak to be treated by the laws of solid-state physics.
+
 ---
 layout: false
 class: split-50-50
@@ -154,33 +158,109 @@ layout: false
 
 ## Solute-Solvent Interactions
 
+???
+
+- Intermolecular forces are usually classified into two distinct categories:
+  1. The so-called directional, induction, and dispersion forces, which are
+     non-specific and cannot be completely saturated ( just as Coulomb forces
+     between ions cannot).
+  2. Hydrogen- bonding forces, and charge-transfer or electron-pair
+     donor–acceptor forces. The latter group are specific, directional forces,
+     which can be saturated and lead to stoichiometric molecular compounds.
+
 ---
 layout: false
-class: split-30-70
 
-## A Microscopic View
+## Classification of Solvents
 
-.column[
-<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 70%"></p>
+- Chemical structure
+- Physical properties
+  - Dipole moment \\(\mu\\)
+  - Relative permittivity \\(\varepsilon_\mathrm{r}\\)
+  - Refractive index \\(n = \sqrt{\varepsilon_\mathrm{r}}\\)
+  - Polarity
+- Acid-base behaviour
+  - Brønsted-Lowry
+  - Lewis
+- Specific solute-solvent interactions
+  - Apolar aprotic (e.g. aliphatic and aromatic hydrocarbons)
+  - Dipolar aprotic (e.g. ketones and sulfoxides)
+  - Protic (e.g. water and alcohols)
+
+???
+
+- We have different, complementary criteria to classify solvents.
+- None of these classifications are clear-cut and unambiguous!
+- We will be mostly interested in those based on physical properties.
+
+See Chapter 3 in Reichardt-Welton
+- Brønster-Lowry
+  1. Protophilic, solvents which have the tendency to produce protons
+  2. Protogenic, solvents which have greater tendency to accept protons
+  3. Amphiprotic, solvents which act both as protophilic or protogenic
+  4. Aprotic solvents, solvents which neither donate nor accept protons
+  5. Levelling (where the acidity/basicity of a solute depends on the
+    basicity/acidity of the solvent, like water) vs. differentiating solvents
+    Strong bases are _leveling solvents_ for acids, weak bases are
+    _differentiating solvents_ for acids. Same applies for bases, _mutatis
+    mutandis_.
+- Lewis
+  - Electrophile/nucleophile
+  - Hard/soft and the HSAB principle
+- Specific solute-solvent interactions. This is based mainly on the dipole
+  moment of the solvent molecule and its ability to form hydrogen bonds
+
+---
+layout: false
+
+## Microscopic and Macroscopic Views
+
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 30%"></p>
 <p style="clear: both;">
-]
-.column[
-The energy of a molecule-solvent cluster:
+
+Microscopic view:
 `
 $$
 E(M\cdot S_n) = \sum_{K}^{n+1} E_K^0 + \Delta E_\mathrm{el} + \Delta E_\mathrm{pol} + \Delta E_\mathrm{rep} + \Delta E_\mathrm{dis}
 $$
 `
-<p style="clear: both;">
-]
 
+Macroscopic view:
+`
+$$
+\Delta G_\mathrm{solv}^0 =
+\Delta G_\mathrm{el} + G_\mathrm{dis} + G_\mathrm{rep} + \Delta G_\mathrm{Mm}(T)
+$$
+`
+
+???
+
+Microscopically, the energy of one single cluster can be decomposed as:
 - \\(E_K^0\\) energy of the isolated \\(K\\)-th molecule
 - \\(\Delta E_\mathrm{el}\\) electrostatic
 - \\(\Delta E_\mathrm{pol}\\) mutual polarization
 - \\(\Delta E_\mathrm{rep}\\) Pauli repulsion
 - \\(\Delta E_\mathrm{dis}\\) dispersion
 
+This is a form of many-body expansion.
 
+From Reichardt-Welton:
+The solvation energy is considered as the change in Gibbs energy when an ion or
+molecule is transferred from a vacuum (or the gas phase) into a solvent.
+The Gibbs energy of solvation, \\(\Delta G_\mathrm{solv}^0\\), a measure of the
+solvation ability of a particular solvent, is the result of a superimposition
+of four principal components of a different nature:
+1. the cavitation energy associated with the hole that the dissolved molecule
+   or ion produces in the solvent;
+2. the orientation energy corresponding to the phenomenon of partial
+   orientation of the dipolar solvent molecules caused by the presence of the
+   solvated molecule or ion;
+3. the isotropic interaction energy corresponding to the unspecific
+   intermolecular forces with a long radius of activity (i.e. electrostatic,
+   polarization, and dispersion energy);
+4. the anisotropic interaction energy resulting from the specific formation of
+   hydrogen bonds or electron-pair donor/electron-pair acceptor bonds at well
+   localized points in the dissolved molecules.
 
 ---
 class: center, middle, inverse
