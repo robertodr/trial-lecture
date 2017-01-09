@@ -61,8 +61,9 @@ layout: false
 
 <div class="imageWrapper">
   <img class="overlayImage" src="images/goldbook-solvation.png" style="width: 100%" align="middle">
+  <p style="clear: both;">
 --
-  <img class="overlayImage" src="images/solvation-map.png" style="width: 60%" align="right">
+  <img class="overlayImage" src="images/solvation-map.png" style="width: 55%" align="middle">
 </div>
 
 ???
@@ -156,17 +157,96 @@ relative to that for an ideal gas
 ---
 layout: false
 
-## Solute-Solvent Interactions
+## Solute-Solvent Interactions.red[<sup>4</sup>]
+
+.left-column[
+### Long-range
+]
+.right-column[
+Interaction energy behaves as some inverse power of the distance:
+- Electrostatic
+  - Attractive or repulsive
+  - Additive
+
+- Induction
+  - Attractive
+  - Nonadditive
+
+- Dispersion
+  - Attractive
+  - Approximately additive
+]
+
+<p style="clear: both;">
+.footnote[.red[<sup>4</sup>]Stone, A. _The Theory of Intermolecular Forces_; OUP Oxford, (2013)]
 
 ???
 
-- Intermolecular forces are usually classified into two distinct categories:
-  1. The so-called directional, induction, and dispersion forces, which are
-     non-specific and cannot be completely saturated ( just as Coulomb forces
-     between ions cannot).
-  2. Hydrogen- bonding forces, and charge-transfer or electron-pair
-     donor–acceptor forces. The latter group are specific, directional forces,
-     which can be saturated and lead to stoichiometric molecular compounds.
+These are also collectively called as _van der Waals forces_:
+- Electrostatic
+  - Classical Coulomb interaction between static charge distributions
+
+- Induction
+  - Classical Coulomb interaction between _induced_ multipoles
+  - Nonadditive because depends on the electric field of neighbouring molecules
+
+- Dispersion
+  - Quantum effect. Due to the correlated motion of electrons
+  - _London_ presented a formulation in terms of instantaneous dipole moments
+  - Geckos can climb due to dispersion forces
+
+---
+layout: false
+
+## Solute-Solvent Interactions.red[<sup>4</sup>]
+
+.left-column[
+### Long-range
+### Short-range
+]
+.right-column[
+Interaction energy exponentially decreases with the distance:
+- Exchange-repulsion
+  - Repulsive
+  - Approximately additive
+]
+
+<p style="clear: both;">
+.footnote[.red[<sup>4</sup>]Stone, A. _The Theory of Intermolecular Forces_; OUP Oxford, (2013)]
+
+???
+
+- Exchange-repulsion
+  - Quantum effect: overlapping electron clouds need to fulfill Pauli exclusion principle
+
+---
+layout: false
+
+## Solute-Solvent Interactions.red[<sup>4</sup>]
+
+.left-column[
+### Long-range
+### Short-range
+### Specific
+]
+.right-column[
+Specific to the solute-solvent pair considered:
+- Hydrogen bond
+- Charge-transfer
+]
+
+<p style="clear: both;">
+.footnote[.red[<sup>4</sup>]Stone, A. _The Theory of Intermolecular Forces_; OUP Oxford, (2013)]
+
+???
+
+- The IUPAC definition of hydrogen bond: ‘an attractive interaction between a
+  hydrogen atom from a molecule or a molecular fragment X–H in which X is more
+  electronegative than H, and an atom or a group of atoms in the same or a
+  different molecule, in which there is evidence of bond formation’
+- Specific interactions are a delicate balance of intermolecular forces, which
+  significantly influence the structure and properties of solutions.
+- These are definitely not additive
 
 ---
 layout: false
