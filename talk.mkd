@@ -309,7 +309,7 @@ Macroscopic view:
 `
 $$
 \Delta G_\mathrm{solv}^0 =
-\Delta G_\mathrm{el} + G_\mathrm{dis} + G_\mathrm{rep} + \Delta G_\mathrm{Mm}(T)
+\Delta G_\mathrm{el} + G_\mathrm{cav} + G_\mathrm{dis} + G_\mathrm{rep} + \Delta G_\mathrm{Mm}(T)
 $$
 `
 
@@ -355,9 +355,9 @@ class: split-50-50
 ## The Problem of Solvation
 
 Aspects computational models need to capture
-- Dynamical nature of solvation
-- Average nature
-- Multiplicity of interactions
+- Dynamical features of solvation
+- Average nature of observables
+- Variety of interactions
 
 .column[
 <font color="red">
@@ -478,15 +478,14 @@ class: split-50-50
 .column[
 <p style="text-align:left;"><img src="images/kinetics.svg" style="width: 80%"></p>
 <p style="clear: both;">
+Solvent effects on reaction rates
+ - _Static_
+ - _Dynamic_
 ]
 .column[
 <p style="text-align:right;"><img src="images/nucleophilic.png" style="width: 50%"></p>
 <p style="clear: both;">
 ]
-
-Solvent effects on reaction rates
- - _Static_
- - _Dynamic_
 
 ???
 
@@ -502,19 +501,9 @@ Solvent effects on reaction rates
 
 ---
 layout: false
-
-## Spectroscopy
-
-<p style="text-align:center;"><img src="images/excitation-solution.svg" style="width: 70%"></p>
-<p style="clear: both;">
-
-???
-
----
-layout: false
 class: split-50-50
 
-## Solvent Dynamics: Time-Dependent Stokes Shift
+## Spectroscopy
 
 .column[
 <p style="text-align:center;"><img src="images/td-stokes.svg" style="width: 80%"></p>
@@ -523,6 +512,7 @@ class: split-50-50
 .column[
 <p style="text-align:center;"><img src="images/td-fluorescence.svg" style="width: 50%"></p>
 
+Time-dependent Stokes shift
 `
 $$
 S_\nu(t) = \frac{\nu(t) - \nu(\infty)}{\nu(0) - \nu(\infty)}
@@ -530,6 +520,11 @@ $$
 `
 <p style="clear: both;">
 ]
+
+UV-Vis absorption and emission shifts are probes for
+  - Solvent dynamics
+  - Time-evolution of solute-solvent interactions
+  - Specific solute-solvent interactions
 
 ???
 
@@ -665,32 +660,102 @@ class: split-60-40
 ---
 class: center, middle, inverse
 
-# Three Not-So-Easy Pieces
+#Three Not - So - Easy Pieces
 
 ---
 layout: false
+class: split-40-60
 
 ## Why Is Mercury Liquid?.red[<sup>2</sup>]
 
-<p style="text-align:center;"><img src="images/Hg-RvsNR-melting.gif" style="width: 50%"></p>
+.column[
+<p style="text-align:center;"><img src="images/Hg-periodic.svg" style="width: 40%"></p>
 <p style="clear: both;">
+]
+.column[
+#### Simulating melting of mercury
+ - Many-body interactions
+ - Relativistic effects
+
+#### Methodology
+ - Monte Carlo simulations in bulk
+ - Diatomic-In-Molecule (DIM) semi-empirical Hamiltonian
+<p style="clear: both;">
+]
 
 .footnote[.red[<sup>2</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed Engl._ (2013), __52__, 7583]
 
 ---
+layout: false
+class: split-40-60
 
-<p style="text-align:center;"><img src="images/Hg-RvsNR-PESs.gif" style="width: 50%"></p>
+## Failure of Many-Body Expansions
+
+.column[
+<p style="text-align:center;"><img src="images/Hg-cluster-melting.gif" style="width: 90%"></p>
 <p style="clear: both;">
+]
+.column[
+
+#### Many-body expansions _utterly fail_ to converge
+- Small clusters, van der Waals
+- Medium-sized clusters, covalent
+- Bulk, metallic
+]
+
+???
 
 ---
+layout: false
+class: split-40-60
 
-<p style="text-align:center;"><img src="images/Hg-cluster-melting.gif" style="width: 50%"></p>
+## Relativity and the DIM Hamiltonian
+
+.column[
+<p style="text-align:center;"><img src="images/Hg-RvsNR-PESs.gif" style="width: 90%"></p>
 <p style="clear: both;">
+]
+.column[
+`
+$$
+H = \sum_{i < j}^N H^{(ij)}(\theta_{ij}, \phi_{ij}) - (N-2)H^{\text{atom}} + V_\mathrm{SO}
+$$
+`
+#### Ground state
+  - Relativistic and non-relativistic similar
+
+#### Excited states
+  - Non-relativistic \\(2\,\,\mathrm{eV}\\) lower than relativistic
+  - Larger off-diagonal interactions
+
+<p style="clear: both;">
+]
+
+.footnote[.red[<sup>6</sup>] Kitamura, H. _Chem. Phys. Lett._ (2006), **425**, 205]
+
+???
+
+- DIM: an approximation at the CI level of theory. The CI matrix is expressed
+  in a valence-bond many-electron basis for the diatomic building pairs
 
 ---
+layout: false
 
-<p style="text-align:center;"><img src="images/Hg-bulk-melting.gif" style="width: 50%"></p>
+## Monte Carlo Simulations in Bulk
+
+`
+$$
+\Delta_\mathrm{R}T_\mathrm{m} = -105\,\,\mathrm{K}
+$$
+`
+<p style="text-align:center;"><img src="images/Hg-bulk-melting.gif" style="width: 60%"></p>
 <p style="clear: both;">
+
+- Mercury is indeed liquid because of relativity
+- Room-temperature density also reproduced
+- Scalar relativistic effect
+
+???
 
 ---
 layout: false
