@@ -537,16 +537,21 @@ layout: false
 - Dynamics
 - Averaging
 - Interactions
+
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 130%"></p>
+<p style="clear: both;">
 ]
 .right-column[
 Computational models for solvation
  1. Integral equation theories
+    - Compute \\(g(r)\\) from the intermolecular potential
+
  2. Simulation of classical liquids
+    - Molecular dynamics
+    - Monte Carlo
+
  3. Supermolecular cluster models
  4. Quantum/classical multiscale models
-
-<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 45%"></p>
-<p style="clear: both;">
 ]
 
 ???
@@ -660,7 +665,7 @@ class: split-60-40
 ---
 class: center, middle, inverse
 
-#Three _Not-So-Easy_ Pieces
+#Three _Not - So - Easy_ Pieces
 
 ---
 layout: false
@@ -840,32 +845,65 @@ layout: false
 
 ---
 layout: false
+class: split-50-50
 
 ## The Morita-Baylis-Hillman Reaction.red[<sup>4</sup>]
 
-<p style="text-align:center;"><img src="images/MBH_general_scheme.png" style="width: 80%"></p>
+<p style="text-align:center;"><img src="images/MBH-reagents-products.gif" style="width: 80%"></p>
 <p style="clear: both;">
 
+.column[
+<p style="text-align:left;"><img src="images/MBH_overall_mechanism.svg" style="width: 80%"></p>
+<p style="clear: both;">
+]
+.column[
 A versatile coupling reaction:
 1. Easily prepared starting materials
 2. Useful in asymmetric syntheses
 3. Highly functionalized product
 4. Organocatalyzed
-
-.footnote[.red[<sup>4</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811
-
-Figure by Wonseokham09 at [English Wikipedia](https://commons.wikimedia.org/w/index.php?curid=48339637), CC BY-SA 3.0
+<p style="clear: both;">
 ]
 
----
-
-<p style="text-align:center;"><img src="images/MBH_overall_mechanism.png" style="width: 100%"></p>
-<p style="clear: both;">
+.footnote[.red[<sup>4</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811]
 
 ---
+layout: false
+class: split-50-50
+
+## Pinning Down the Elimination Mechanism
 
 <p style="text-align:center;"><img src="images/MBH_elimination_mechanism.png" style="width: 100%"></p>
 <p style="clear: both;">
+
+Plata and Singleton experimental arsenal:
+- Intermediates profiling
+- Kinetic studies
+- Isotope incorporation
+- Kinetic isotope effects
+
+---
+layout: false
+class: split-60-40
+
+## Experimental and Computational Mechanisms
+
+.column[
+<p style="text-align:center;"><img src="images/MBH_reaction-profile.jpeg" style="width: 100%"></p>
+<p style="clear: both;">
+]
+.column[
+- Stepwise acid-base elimination
+- Wild computational error spread
+<p style="clear: both;">
+]
+
+#### Why so?
+- Not a problem with DFT
+- Role of entropy **overestimated**
+- **Inappropriate** solvation model
+  - Too large electrostatic stabilization
+  - Specific interactions neglected
 
 ---
 layout: false
