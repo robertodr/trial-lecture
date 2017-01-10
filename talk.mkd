@@ -33,7 +33,7 @@ layout: false
     - Spectroscopy
 
 
-  - **Three Not-So-Easy Pieces**
+  - **Three _Not-So-Easy_ Pieces**
     - Why Is Mercury Liquid?
     - What Is Solvatochromism?
     - The Morita-Baylis-Hillman Reaction
@@ -522,7 +522,7 @@ $$
 ]
 
 UV-Vis absorption and emission shifts are probes for
-  - Solvent dynamics
+  - Solvent and solvation dynamics
   - Time-evolution of solute-solvent interactions
   - Specific solute-solvent interactions
 
@@ -660,7 +660,7 @@ class: split-60-40
 ---
 class: center, middle, inverse
 
-#Three Not - So - Easy Pieces
+#Three _Not-So-Easy_ Pieces
 
 ---
 layout: false
@@ -762,16 +762,81 @@ layout: false
 
 ## What Is Solvatochromism?.red[<sup>3</sup>]
 
-<p style="text-align:center;"><img src="images/solvatochromism.png" style="width: 80%"></p>
+### Solvent polarity strikingly changes UV/Vis bands
+
+<p style="text-align:center;"><img src="images/solvatochromism.png" style="width: 40%"></p>
 <p style="clear: both;">
 
+Solvatochromic shifts as empirical measures of _polarity_
+  - Intermolecular forces
+  - Solvent and solvation dynamics
+  - Charge-transfer excitations
+  - Hydrogen bonding
+
 .footnote[.red[<sup>3</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
+
+???
+
+Solvatochromic shifts are used as empirical measures of _polarity_.
+However, these shifts arise as the subtle interplay of a number of complex phenomena which cannot always be
+related to a univocal measure of solvent polarity.
+Particularly strong solvatochromic probes are CT probes. If capable of hydrogen
+bond, the solvation dynamics in the ground and excited state will be extremely
+complicated.
+
+---
+layout: false
+class: split-50-50
+
+## Nonequilibrium Solvation
+
+.column[
+<p style="text-align:center;"><img src="images/excitation-solution.svg" style="width: 80%"></p>
+<p style="clear: both;">
+]
+.column[
+#### Complementary modelling approaches
+- QM cluster
+- QM/Polarizable MM
+- QM/Continuum
+
+#### Dissect and analyze
+- Solvent and solvation dynamics
+- Hydrogen-bond
+- Long-range polarization
+]
+<p style="text-align:center;"><img src="images/solvatochromism-probes.jpeg" style="width: 50%"></p>
+<p style="clear: both;">
 
 ---
 layout: false
 
-<p style="text-align:center;"><img src="images/excitation-solution.svg" style="width: 80%"></p>
+## The Importance of Models
+
+#### Absorption is more sensitive to hydrogen bonding that fluorescence
+
+<p style="text-align:center;"><img src="images/solvatochromism-results.svg" style="width: 90%"></p>
 <p style="clear: both;">
+
+
+???
+
+- \\(\delta_{\mathrm{HB}}\\) quantifies shift when moving from polar aprotic to
+  polar protic solvent
+- \\(\delta_{\mathrm{SS}}\\) quantifies the Stokes shift when moving from polar
+  aprotic to polar protic solvent
+- PCM is the QM/Continuum approach. **Only includes long-range polarization**
+- \\(+\text{nmol}\\) is the QM cluster approach, with supermolecular geometry
+  optimization **Only includes specific effects**
+- \\(\text{PCM}+\text{nmol}\\) is the QM cluster approach, with supermolecular geometry
+  optimization **Includes specific effects and long-range polarization**
+- \\(\langle\text{MD}+\text{MMpol}\rangle\\) is the QM/Polarizable MM approach,
+  averaged over a number of snapshots obtained from an MD simulation **Includes
+  specific effects, long-range polarization and dynamics**
+- \\(\langle\text{MD}+\text{PCM}\rangle\\) is the QM/Continuum approach on
+  supermolecules derived from snapshots in an MD simulation.
+  Results are again averaged.
+  **Includes specific effects, long-range polarization and dynamics**
 
 ---
 layout: false
@@ -807,35 +872,16 @@ layout: false
 
 .left-column[
   ## Conclusions
-
-  - Obvious
 ]
 .right-column[
   - Chemistry is a wet science
-    - Solvent effects are ubiquitous
+    - Solvation is ubiquitous
     - Understanding solvent effects is key
 
 
-  - Experimentally
-    - bla
-
-
-  - Computationally
-    - more bla
-]
-
----
-layout: false
-
-.left-column[
-  ## Conclusions
-
-  - Obvious
-  - Not-So-Obvious
-]
-.right-column[
   - Computation
     - Definitely not a blackbox
+    - Mechanistic and structural insight
 
 
   - Experiment
