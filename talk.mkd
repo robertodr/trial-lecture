@@ -425,7 +425,7 @@ Temperature-dependent solvent effect:
 layout: false
 class: split-50-50
 
-## \\(\beta\\)-Diketones Keto-Enol Tautomerism.red[<sup>5</sup>]
+## \\(\beta\\)-Diketones Keto-Enol Tautomerism.red[<sup>2</sup>]
 
 .column[
 <p style="text-align:left;"><img src="images/Acetylacetone_keto-enol_tautomerism.svg" style="width: 80%"></p>
@@ -439,7 +439,7 @@ class: split-50-50
 - Enol form favoured in _apolar_ solvents
 - Keto form favoured in _polar_ solvents
 
-.footnote[.red[<sup>5</sup>] Drexler, E. J.; Field, K. W. _J. Chem. Educ._ (1976), **53**, 392]
+.footnote[.red[<sup>2</sup>] Drexler, E. J.; Field, K. W. _J. Chem. Educ._ (1976), **53**, 392]
 
 ???
 
@@ -563,7 +563,7 @@ Computational models for solvation
 layout: false
 class: split-50-50
 
-## Multiscale models.red[<sup>1</sup>]
+## Multiscale models.red[<sup>3</sup>]
 
 - Use **quantum** and **classical** physics together:
   * quantum for chemically relevant subsystem
@@ -578,7 +578,7 @@ class: split-50-50
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>1</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
+.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
 
 ???
 
@@ -588,7 +588,7 @@ class: split-50-50
 ---
 layout: false
 class: split-60-40
-## QM/MM.red[<sup>2</sup>]
+## QM/MM.red[<sup>3</sup>]
 
 - Use **quantum** and **classical** physics together:
   * quantum for chemically relevant subsystem
@@ -607,7 +607,7 @@ class: split-60-40
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>1</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
+.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
 
 ???
 
@@ -621,7 +621,7 @@ class: split-60-40
 layout: false
 class: split-60-40
 
-## QM/Continuum.red[<sup>2</sup>]
+## QM/Continuum.red[<sup>4</sup>]
 
 - Use **quantum** and **classical** physics together:
   * quantum for chemically relevant subsystem
@@ -639,7 +639,7 @@ class: split-60-40
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>2</sup>] J. Tomasi, B. Mennucci, R. Cammi, _Chem. Rev._, __105__, 2999, (2005)]
+.footnote[.red[<sup>4</sup>] J. Tomasi, B. Mennucci, R. Cammi, _Chem. Rev._, __105__, 2999, (2005)]
 
 ???
 
@@ -652,7 +652,7 @@ class: center, middle, inverse
 layout: false
 class: split-40-60
 
-## Why Is Mercury Liquid?.red[<sup>2</sup>]
+## Why Is Mercury Liquid?.red[<sup>5</sup>]
 
 .column[
 <p style="text-align:center;"><img src="images/Hg-periodic.svg" style="width: 40%"></p>
@@ -669,7 +669,7 @@ class: split-40-60
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>2</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed Engl._ (2013), __52__, 7583]
+.footnote[.red[<sup>5</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed Engl._ (2013), __52__, 7583]
 
 ---
 layout: false
@@ -695,7 +695,7 @@ class: split-40-60
 layout: false
 class: split-40-60
 
-## Relativity and the DIM Hamiltonian
+## Relativity and the DIM Hamiltonian.red[<sup>6</sup>]
 
 .column[
 <p style="text-align:center;"><img src="images/Hg-RvsNR-PESs.png" style="width: 90%"></p>
@@ -746,7 +746,7 @@ $$
 ---
 layout: false
 
-## What Is Solvatochromism?.red[<sup>3</sup>]
+## What Is Solvatochromism?.red[<sup>7</sup>]
 
 ### Solvent polarity strikingly changes UV/Vis bands
 
@@ -759,7 +759,7 @@ Solvatochromic shifts as empirical measures of _polarity_
   - Charge-transfer excitations
   - Hydrogen bonding
 
-.footnote[.red[<sup>3</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
+.footnote[.red[<sup>7</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
 
 ???
 
@@ -830,6 +830,10 @@ layout: false
 
 ???
 
+- \\(\delta_{\mathrm{HB}}\\) quantifies shift when moving from polar aprotic to
+  polar protic solvent
+- \\(\delta_{\mathrm{SS}}\\) quantifies the Stokes shift when moving from polar
+  aprotic to polar protic solvent
 - PCM is the QM/Continuum approach. **Only includes long-range polarization**
 - \\(+\text{nmol}\\) is the QM cluster approach, with supermolecular geometry
   optimization **Only includes specific effects**
@@ -843,12 +847,11 @@ layout: false
   Results are again averaged.
   **Includes specific effects, long-range polarization and dynamics**
 
-
 ---
 layout: false
 class: split-50-50
 
-## The Morita-Baylis-Hillman Reaction.red[<sup>4</sup>]
+## The Morita-Baylis-Hillman Reaction.red[<sup>8</sup>]
 
 <p style="text-align:center;"><img src="images/MBH-reagents-products.gif" style="width: 80%"></p>
 <p style="clear: both;">
@@ -866,7 +869,7 @@ A versatile coupling reaction:
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>4</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811]
+.footnote[.red[<sup>8</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811]
 
 ---
 layout: false
