@@ -59,12 +59,14 @@ class: center, middle, inverse
 ---
 layout: false
 
-<div class="imageWrapper">
-  <img class="overlayImage" src="images/goldbook-solvation.png" style="width: 100%" align="middle">
-  <p style="clear: both;">
---
-  <img class="overlayImage" src="images/solvation-map.png" style="width: 55%" align="middle">
-</div>
+<p style="text-align:center;"><img src="images/goldbook-solvation.svg" style="width: 100%"></p>
+<p style="clear: both;">
+
+---
+layout: false
+
+<p style="text-align:center;"><img src="images/solvation-map.svg" style="width: 80%"></p>
+<p style="clear: both;">
 
 ???
 
@@ -81,7 +83,7 @@ layout: false
 ---
 layout: false
 
-## James Bond Cocktail.red[<sup>1</sup>]
+## Whetting Your Appetite: James Bond Cocktail.red[<sup>1</sup>]
 
 <p style="text-align:center;"><img src="images/james-bond-cocktail.png" style="width: 100%"></p>
 <p style="clear: both;">
@@ -110,7 +112,7 @@ Liquids and solutions:
 <p style="clear: both;">
 ]
 .column[
-<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 45%"></p>
+<p style="text-align:center;"><img src="images/MD.gif" style="width: 50%"></p>
 <p style="clear: both;">
 ]
 
@@ -157,38 +159,28 @@ relative to that for an ideal gas
 ---
 layout: false
 
-## Solute-Solvent Interactions.red[<sup>4</sup>]
+## Solute-Solvent Interactions
 
 .left-column[
 ### Long-range
 ]
 .right-column[
-Interaction energy behaves as some inverse power of the distance:
+#### Interaction energy is an inverse power of the distance
+
 - Electrostatic
-  - Attractive or repulsive
-  - Additive
-
-- Induction
-  - Attractive
-  - Nonadditive
-
 - Dispersion
-  - Attractive
-  - Approximately additive
+
+<p style="text-align:center;"><img src="images/attractive-pair-potential.svg" style="width: 70%"></p>
+<p style="clear: both;">
 ]
 
 <p style="clear: both;">
-.footnote[.red[<sup>4</sup>]Stone, A. _The Theory of Intermolecular Forces_; OUP Oxford, (2013)]
 
 ???
 
 These are also collectively called as _van der Waals forces_:
 - Electrostatic
   - Classical Coulomb interaction between static charge distributions
-
-- Induction
-  - Classical Coulomb interaction between _induced_ multipoles
-  - Nonadditive because depends on the electric field of neighbouring molecules
 
 - Dispersion
   - Quantum effect. Due to the correlated motion of electrons
@@ -198,21 +190,22 @@ These are also collectively called as _van der Waals forces_:
 ---
 layout: false
 
-## Solute-Solvent Interactions.red[<sup>4</sup>]
+## Solute-Solvent Interactions
 
 .left-column[
 ### Long-range
 ### Short-range
 ]
 .right-column[
-Interaction energy exponentially decreases with the distance:
+#### Interaction energy is an inverse power of the distance
+#### Interaction energy decays exponentially with the distance
 - Exchange-repulsion
-  - Repulsive
-  - Approximately additive
+
+<p style="text-align:center;"><img src="images/pair-potential.svg" style="width: 70%"></p>
+<p style="clear: both;">
 ]
 
 <p style="clear: both;">
-.footnote[.red[<sup>4</sup>]Stone, A. _The Theory of Intermolecular Forces_; OUP Oxford, (2013)]
 
 ???
 
@@ -222,7 +215,7 @@ Interaction energy exponentially decreases with the distance:
 ---
 layout: false
 
-## Solute-Solvent Interactions.red[<sup>4</sup>]
+## Solute-Solvent Interactions
 
 .left-column[
 ### Long-range
@@ -230,13 +223,17 @@ layout: false
 ### Specific
 ]
 .right-column[
-Specific to the solute-solvent pair considered:
+#### Interaction energy is an inverse power of the distance
+#### Interaction energy decays exponentially with the distance
+#### Specific to the solute-solvent pair considered
 - Hydrogen bond
 - Charge-transfer
+
+<p style="text-align:center;"><img src="images/4AP+nmol.png" style="width: 60%"></p>
+<p style="clear: both;">
 ]
 
 <p style="clear: both;">
-.footnote[.red[<sup>4</sup>]Stone, A. _The Theory of Intermolecular Forces_; OUP Oxford, (2013)]
 
 ???
 
@@ -301,7 +298,7 @@ layout: false
 Microscopic view:
 `
 $$
-E(M\cdot S_n) = \sum_{K}^{n+1} E_K^0 + \Delta E_\mathrm{el} + \Delta E_\mathrm{pol} + \Delta E_\mathrm{rep} + \Delta E_\mathrm{dis}
+E(M\cdot S_n) = \sum_{K}^{n+1} E_K^0 + \Delta E_\mathrm{el} + \Delta E_\mathrm{rep} + \Delta E_\mathrm{dis}
 $$
 `
 
@@ -350,7 +347,6 @@ class: center, middle, inverse
 
 ---
 layout: false
-class: split-50-50
 
 ## The Problem of Solvation
 
@@ -359,23 +355,8 @@ Aspects computational models need to capture
 - Average nature of observables
 - Variety of interactions
 
-.column[
-<font color="red">
-Solvent effects
-</font>
+<p style="text-align:center;"><img src="images/solvation-dynamics.gif" style="width: 45%"></p>
 <p style="clear: both;">
-- Direct
-- Indirect
-- Local field
-- Dynamic
-- Specific
-
-**Balanced description** needed to reproduce/predict experiments!
-]
-.column[
-<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 45%"></p>
-<p style="clear: both;">
-]
 
 ???
 
@@ -665,7 +646,7 @@ class: split-60-40
 ---
 class: center, middle, inverse
 
-#Three _Not - So - Easy_ Pieces
+# Three _Not-So-Easy_ Pieces
 
 ---
 layout: false
@@ -697,7 +678,7 @@ class: split-40-60
 ## Failure of Many-Body Expansions
 
 .column[
-<p style="text-align:center;"><img src="images/Hg-cluster-melting.gif" style="width: 90%"></p>
+<p style="text-align:center;"><img src="images/Hg-cluster-melting.png" style="width: 90%"></p>
 <p style="clear: both;">
 ]
 .column[
@@ -717,7 +698,7 @@ class: split-40-60
 ## Relativity and the DIM Hamiltonian
 
 .column[
-<p style="text-align:center;"><img src="images/Hg-RvsNR-PESs.gif" style="width: 90%"></p>
+<p style="text-align:center;"><img src="images/Hg-RvsNR-PESs.png" style="width: 90%"></p>
 <p style="clear: both;">
 ]
 .column[
@@ -753,7 +734,7 @@ $$
 \Delta_\mathrm{R}T_\mathrm{m} = -105\,\,\mathrm{K}
 $$
 `
-<p style="text-align:center;"><img src="images/Hg-bulk-melting.gif" style="width: 60%"></p>
+<p style="text-align:center;"><img src="images/Hg-bulk-melting.png" style="width: 60%"></p>
 <p style="clear: both;">
 
 - Mercury is indeed liquid because of relativity
@@ -816,20 +797,13 @@ class: split-50-50
 ---
 layout: false
 
-## The Importance of Models
+## Dissecting Solvatochromism
 
-#### Absorption is more sensitive to hydrogen bonding that fluorescence
-
-<p style="text-align:center;"><img src="images/solvatochromism-results.svg" style="width: 90%"></p>
+<p style="text-align:center;"><img src="images/solvatochromism-models.svg" style="width: 90%"></p>
 <p style="clear: both;">
-
 
 ???
 
-- \\(\delta_{\mathrm{HB}}\\) quantifies shift when moving from polar aprotic to
-  polar protic solvent
-- \\(\delta_{\mathrm{SS}}\\) quantifies the Stokes shift when moving from polar
-  aprotic to polar protic solvent
 - PCM is the QM/Continuum approach. **Only includes long-range polarization**
 - \\(+\text{nmol}\\) is the QM cluster approach, with supermolecular geometry
   optimization **Only includes specific effects**
@@ -842,6 +816,33 @@ layout: false
   supermolecules derived from snapshots in an MD simulation.
   Results are again averaged.
   **Includes specific effects, long-range polarization and dynamics**
+
+---
+layout: false
+
+## The Importance of Models
+
+#### Absorption is more sensitive to hydrogen bonding that fluorescence
+
+<p style="text-align:center;"><img src="images/solvatochromism-results.svg" style="width: 90%"></p>
+<p style="clear: both;">
+
+
+???
+
+- PCM is the QM/Continuum approach. **Only includes long-range polarization**
+- \\(+\text{nmol}\\) is the QM cluster approach, with supermolecular geometry
+  optimization **Only includes specific effects**
+- \\(\text{PCM}+\text{nmol}\\) is the QM cluster approach, with supermolecular geometry
+  optimization **Includes specific effects and long-range polarization**
+- \\(\langle\text{MD}+\text{MMpol}\rangle\\) is the QM/Polarizable MM approach,
+  averaged over a number of snapshots obtained from an MD simulation **Includes
+  specific effects, long-range polarization and dynamics**
+- \\(\langle\text{MD}+\text{PCM}\rangle\\) is the QM/Continuum approach on
+  supermolecules derived from snapshots in an MD simulation.
+  Results are again averaged.
+  **Includes specific effects, long-range polarization and dynamics**
+
 
 ---
 layout: false
@@ -939,6 +940,10 @@ layout: false
 layout: false
 
 ## Acknowledgements
+
+- Glenn Morello (CTCC)
+- Luca Frediani (CTCC)
+- Maarten Beerepoot (CTCC)
 
 ---
 name: last-page
