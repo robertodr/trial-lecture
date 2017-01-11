@@ -108,13 +108,13 @@ Liquids and solutions:
 - Partially ordered systems
 - High mobility
 - Dynamical picture
-<p style="text-align:center;"><img src="images/Rdf_schematic.jpg" style="width: 45%"></p>
-<p style="clear: both;">
 ]
 .column[
-<p style="text-align:center;"><img src="images/MD.gif" style="width: 50%"></p>
+<p style="text-align:center;"><img src="images/Rdf_schematic.jpg" style="width: 30%"></p>
 <p style="clear: both;">
 ]
+<p style="text-align:center;"><img src="images/MD.gif" style="width: 50%"></p>
+<p style="clear: both;">
 
 ???
 
@@ -126,14 +126,13 @@ Liquids and solutions:
 layout: false
 class: split-50-50
 
-## Radial Distribution Function
+## \\(g(r)\\) The Radial Distribution Function
+
+<p style="text-align:center;"><img src="images/RDF.gif" style="width: 40%"></p>
+<p style="clear: both;">
 
 Probability of finding a particle at distance \\(r\\) away from a given reference,
 relative to that for an ideal gas
-
-- Describes density variations with distance
-- Experimentally observable
-- Computationally accessible
 
 .column[
 <p style="text-align:left;"><img src="images/gasAr.png" style="width: 85%"></p>
@@ -145,6 +144,9 @@ relative to that for an ideal gas
 
 ???
 
+- Describes density variations with distance
+- Experimentally observable
+- Computationally accessible
 - \\(g(r)\\) describes how density varies as a function of distance from a
   reference particle.
 - X-ray or neutron scattering can be used to determine the structure factor
@@ -170,7 +172,7 @@ layout: false
 - Electrostatic
 - Dispersion
 
-<p style="text-align:center;"><img src="images/attractive-pair-potential.svg" style="width: 70%"></p>
+<p style="text-align:center;"><img src="images/el+dis-pair-potential.png" style="width: 70%"></p>
 <p style="clear: both;">
 ]
 
@@ -201,7 +203,7 @@ layout: false
 #### Interaction energy decays exponentially with the distance
 - Exchange-repulsion
 
-<p style="text-align:center;"><img src="images/pair-potential.svg" style="width: 70%"></p>
+<p style="text-align:center;"><img src="images/rep+el+dis-pair-potential.png" style="width: 70%"></p>
 <p style="clear: both;">
 ]
 
@@ -487,7 +489,7 @@ class: split-50-50
 ## Spectroscopy
 
 .column[
-<p style="text-align:center;"><img src="images/td-stokes.svg" style="width: 80%"></p>
+<p style="text-align:center;"><img src="images/td-stokes.png" style="width: 80%"></p>
 <p style="clear: both;">
 ]
 .column[
@@ -646,7 +648,7 @@ class: split-60-40
 ---
 class: center, middle, inverse
 
-# Three _Not-So-Easy_ Pieces
+#Three _Not - So - Easy_ Pieces
 
 ---
 layout: false
@@ -777,7 +779,7 @@ class: split-50-50
 ## Nonequilibrium Solvation
 
 .column[
-<p style="text-align:center;"><img src="images/excitation-solution.svg" style="width: 80%"></p>
+<p style="text-align:center;"><img src="images/excitation-solution.png" style="width: 80%"></p>
 <p style="clear: both;">
 ]
 .column[
@@ -853,11 +855,11 @@ class: split-50-50
 
 ## The Morita-Baylis-Hillman Reaction.red[<sup>8</sup>]
 
-<p style="text-align:center;"><img src="images/MBH-reagents-products.gif" style="width: 80%"></p>
+<p style="text-align:center;"><img src="images/MBH-reagents-products.png" style="width: 70%"></p>
 <p style="clear: both;">
 
 .column[
-<p style="text-align:left;"><img src="images/MBH_overall_mechanism.svg" style="width: 80%"></p>
+<p style="text-align:left;"><img src="images/MBH_overall_mechanism.png" style="width: 90%"></p>
 <p style="clear: both;">
 ]
 .column[
@@ -888,9 +890,26 @@ Plata and Singleton experimental arsenal:
 
 ---
 layout: false
-class: split-60-40
 
 ## Experimental and Computational Mechanisms
+
+<p style="text-align:center;"><img src="images/MBH_reaction-profile.jpeg" style="width: 100%"></p>
+<p style="clear: both;">
+
+???
+
+- The acid-base mechanism is the actual one
+- Computational models favor the proton-shuttle mechanism, because it's easier
+  to model it
+- It's important to focus on the _spread_ of computed intermediates and
+  transition states from the actual reaction path.
+- Point out the higher level results, which are also incorrect
+
+---
+layout: false
+class: split-60-40
+
+## Making A Bad Calculation
 
 .column[
 <p style="text-align:center;"><img src="images/MBH_reaction-profile.jpeg" style="width: 100%"></p>
@@ -899,6 +918,7 @@ class: split-60-40
 .column[
 - Stepwise acid-base elimination
 - Wild computational error spread
+<p style="clear: both;">
 <p style="clear: both;">
 ]
 
