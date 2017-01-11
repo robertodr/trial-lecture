@@ -24,6 +24,7 @@ layout: false
 .right-column[
   - **Solvents and Solvation**
     - What Is Solvation?
+    - The Liquid Phase
     - Solute-Solvent Interactions
 
 
@@ -31,24 +32,13 @@ layout: false
     - Thermodynamics
     - Kinetics
     - Spectroscopy
+    - Theories and Models
 
 
   - **Three _Not-So-Easy_ Pieces**
     - Why Is Mercury Liquid?
     - What Is Solvatochromism?
     - The Morita-Baylis-Hillman Reaction
-]
-<p style="clear: both;">
-.left-column[
-  ### General References
-]
-.right-column[
-<p style="clear: both;">
-  Reichardt, C.; Welton, T. _Solvents and Solvent Effects in Organic Chemistry_; Wiley, (2010)
-
-  Hansen, J. P.; McDonald, I. R. _Theory of Simple Liquids_; Elsevier Science, (2013)
-
-  Mennucci, B.; Cammi, R. _Continuum Solvation Models in Chemical Physics_; Wiley, (2008)
 ]
 
 ---
@@ -65,7 +55,7 @@ layout: false
 ---
 layout: false
 
-<p style="text-align:center;"><img src="images/solvation-map.svg" style="width: 80%"></p>
+<p style="text-align:center;"><img src="images/solvation-map.png" style="width: 80%"></p>
 <p style="clear: both;">
 
 ???
@@ -126,13 +116,10 @@ Liquids and solutions:
 layout: false
 class: split-50-50
 
-## \\(g(r)\\) The Radial Distribution Function
+## Meet The Radial Distribution Function
 
 <p style="text-align:center;"><img src="images/RDF.gif" style="width: 40%"></p>
 <p style="clear: both;">
-
-Probability of finding a particle at distance \\(r\\) away from a given reference,
-relative to that for an ideal gas
 
 .column[
 <p style="text-align:left;"><img src="images/gasAr.png" style="width: 85%"></p>
@@ -144,13 +131,12 @@ relative to that for an ideal gas
 
 ???
 
-- Describes density variations with distance
-- Experimentally observable
-- Computationally accessible
 - \\(g(r)\\) describes how density varies as a function of distance from a
   reference particle.
 - X-ray or neutron scattering can be used to determine the structure factor
   \\(S(q)\\), related to \\(g(r)\\)
+- Animated GIF is the \\(g(r)\\) of the other oxygens
+- **Solvation shells**
 - Monte Carlo, molecular dynamics, integral equations theory
 - Solute-solvent interactions are ultimately the key to understand solvation
   and solvent effects. These can be rationalized in terms of intermolecular
@@ -168,9 +154,6 @@ layout: false
 ]
 .right-column[
 #### Interaction energy is an inverse power of the distance
-
-- Electrostatic
-- Dispersion
 
 <p style="text-align:center;"><img src="images/el+dis-pair-potential.png" style="width: 70%"></p>
 <p style="clear: both;">
@@ -201,8 +184,6 @@ layout: false
 .right-column[
 #### Interaction energy is an inverse power of the distance
 #### Interaction energy decays exponentially with the distance
-- Exchange-repulsion
-
 <p style="text-align:center;"><img src="images/rep+el+dis-pair-potential.png" style="width: 70%"></p>
 <p style="clear: both;">
 ]
@@ -250,61 +231,21 @@ layout: false
 ---
 layout: false
 
-## Classification of Solvents
-
-- Chemical structure
-- Physical properties
-  - Dipole moment \\(\mu\\)
-  - Relative permittivity \\(\varepsilon_\mathrm{r}\\)
-  - Refractive index \\(n = \sqrt{\varepsilon_\mathrm{r}}\\)
-  - Polarity
-- Acid-base behaviour
-  - Brønsted-Lowry
-  - Lewis
-- Specific solute-solvent interactions
-  - Apolar aprotic (e.g. aliphatic and aromatic hydrocarbons)
-  - Dipolar aprotic (e.g. ketones and sulfoxides)
-  - Protic (e.g. water and alcohols)
-
-???
-
-- We have different, complementary criteria to classify solvents.
-- None of these classifications are clear-cut and unambiguous!
-- We will be mostly interested in those based on physical properties.
-
-See Chapter 3 in Reichardt-Welton
-- Brønster-Lowry
-  1. Protophilic, solvents which have the tendency to produce protons
-  2. Protogenic, solvents which have greater tendency to accept protons
-  3. Amphiprotic, solvents which act both as protophilic or protogenic
-  4. Aprotic solvents, solvents which neither donate nor accept protons
-  5. Levelling (where the acidity/basicity of a solute depends on the
-    basicity/acidity of the solvent, like water) vs. differentiating solvents
-    Strong bases are _leveling solvents_ for acids, weak bases are
-    _differentiating solvents_ for acids. Same applies for bases, _mutatis
-    mutandis_.
-- Lewis
-  - Electrophile/nucleophile
-  - Hard/soft and the HSAB principle
-- Specific solute-solvent interactions. This is based mainly on the dipole
-  moment of the solvent molecule and its ability to form hydrogen bonds
-
----
-layout: false
-
 ## Microscopic and Macroscopic Views
 
-<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 30%"></p>
+
+<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 25%"></p>
 <p style="clear: both;">
 
-Microscopic view:
+
+**Microscopic view**
 `
 $$
-E(M\cdot S_n) = \sum_{K}^{n+1} E_K^0 + \Delta E_\mathrm{el} + \Delta E_\mathrm{rep} + \Delta E_\mathrm{dis}
+E = \sum_{K}^{n+1} E_K^0 + \Delta E_\mathrm{el} + \Delta E_\mathrm{rep} + \Delta E_\mathrm{dis}
 $$
 `
 
-Macroscopic view:
+**Macroscopic view**
 `
 $$
 \Delta G_\mathrm{solv}^0 =
@@ -349,6 +290,101 @@ class: center, middle, inverse
 
 ---
 layout: false
+class: split-50-50
+
+## Thermodynamics
+
+.column[
+<p style="text-align:left;"><img src="images/equilibrium.svg" style="width: 90%"></p>
+<p style="clear: both;">
+]
+.column[
+<p style="text-align:right;"><img src="images/acetylacetone.png" style="width: 50%"></p>
+<p style="clear: both;">
+]
+`$$
+\begin{align}
+&\Delta\Delta G^0(\mathrm{I}\rightarrow\mathrm{II}) = \color{blue}{\Delta G^0(\mathrm{II})} - \color{red}{\Delta G^0(\mathrm{I})}
+\\
+&= \Delta G^0_\mathrm{t}(\mathrm{B}, \mathrm{I}\rightarrow\mathrm{II}) - \Delta G^0_\mathrm{t}(\mathrm{A}, \mathrm{I}\rightarrow\mathrm{II})
+= \Delta\Delta H^0_\mathrm{t}(\mathrm{I}\rightarrow\mathrm{II}) -T\Delta\Delta S^0_\mathrm{t}(\mathrm{I}\rightarrow\mathrm{II})
+\end{align}
+$$`
+
+Temperature-dependent solvent effect:
+ - Cooperative
+ - Enthalpy-controlled
+ - Entropy-controlled
+ - Compensating
+
+???
+
+- Difference in molar transfer \\(\Delta\Delta
+  G^0_\mathrm{t}(\mathrm{I}\rightarrow\mathrm{II})\\) determines the solvent
+  effect on the equilibrium
+- All classes of reactions are influenced by transfer to a solvent
+- The Sn2 reaction is a particularly well-known example
+- An even more striking example is that of tautomeric equilibria.
+  For example, the keto-enol equilibrium of \\(\beta\\)-diketones and 4-pyridone
+- The enol form of \\(\beta\\)-diketones can form intramolecular hydrogen bond,
+  which lowers its dipole moment.
+- The keto form of \\(\beta\\)-diketones can form hydrogen bond with the
+  solvent and has also a higher dipole moment.
+
+---
+layout: false
+class: split-50-50
+
+## Kinetics
+
+<p style="text-align:center;"><img src="images/kinetics.svg" style="width: 45%"></p>
+<p style="clear: both;">
+Solvent effects on reaction rates
+ - _Static_
+ - _Dynamic_
+
+???
+
+Solvent effects on reaction rates
+ - _Static_: differential solvation of reactants and activated complex.
+   This modifies the activation free energy, enthalpy and entropy, affecting the rate.
+   The basic assumption is that of equilibrium between reactants and activated
+   complex, which in turn means that solvent orientational relaxation happens
+   on time scales shorter than the activation process.
+ - _Dynamic_: anything that happens because the assumption of fast
+   orientational relaxation breaks down. In this case the solvent actually
+   participates in the reaction.
+
+---
+layout: false
+class: split-50-50
+
+## Spectroscopy
+
+.column[
+<p style="text-align:center;"><img src="images/td-stokes.png" style="width: 80%"></p>
+<p style="clear: both;">
+]
+.column[
+<p style="text-align:center;"><img src="images/td-fluorescence.svg" style="width: 50%"></p>
+
+`
+$$
+S_\nu(t) = \frac{\nu(t) - \nu(\infty)}{\nu(0) - \nu(\infty)}
+$$
+`
+<p style="clear: both;">
+]
+
+UV-Vis absorption and emission shifts are probes for
+  - Solvent and solvation dynamics
+  - Time-evolution of solute-solvent interactions
+  - Specific solute-solvent interactions
+
+???
+
+---
+layout: false
 
 ## The Problem of Solvation
 
@@ -386,135 +422,8 @@ Aspects computational models need to capture
 
 ---
 layout: false
-class: split-50-50
 
-## Thermodynamics
-
-.column[
-<p style="text-align:left;"><img src="images/equilibrium.svg" style="width: 90%"></p>
-<p style="clear: both;">
-]
-.column[
-<p style="text-align:right;"><img src="images/sn2.png" style="width: 40%"></p>
-<p style="clear: both;">
-]
-`$$
-\begin{align}
-&\Delta\Delta G^0(\mathrm{I}\rightarrow\mathrm{II}) = \color{blue}{\Delta G^0(\mathrm{II})} - \color{red}{\Delta G^0(\mathrm{I})}
-\\
-&= \Delta G^0_\mathrm{t}(B, \mathrm{I}\rightarrow\mathrm{II}) - \Delta G^0_\mathrm{t}(A, \mathrm{I}\rightarrow\mathrm{II})
-= \Delta\Delta H^0_\mathrm{t}(\mathrm{I}\rightarrow\mathrm{II}) -T\Delta\Delta S^0_\mathrm{t}(\mathrm{I}\rightarrow\mathrm{II})
-\end{align}
-$$`
-
-Temperature-dependent solvent effect:
- - Cooperative
- - Enthalpy-controlled
- - Entropy-controlled
- - Compensating
-
-???
-
-- Difference in molar transfer \\(\Delta\Delta
-  G^0_\mathrm{t}(\mathrm{I}\rightarrow\mathrm{II})\\) determines the solvent
-  effect on the equilibrium
-- All classes of reactions are influenced by transfer to a solvent
-- The Sn2 reaction is a particularly well-known example
-- An even more striking example is that of tautomeric equilibria.
-  For example, the keto-enol equilibrium of \\(\beta\\)-diketones and 4-pyridone
-
----
-layout: false
-class: split-50-50
-
-## \\(\beta\\)-Diketones Keto-Enol Tautomerism.red[<sup>2</sup>]
-
-.column[
-<p style="text-align:left;"><img src="images/Acetylacetone_keto-enol_tautomerism.svg" style="width: 80%"></p>
-<p style="clear: both;">
-]
-.column[
-<p style="text-align:right;"><img src="images/acetylacetone.svg" style="width: 40%"></p>
-<p style="clear: both;">
-]
-
-- Enol form favoured in _apolar_ solvents
-- Keto form favoured in _polar_ solvents
-
-.footnote[.red[<sup>2</sup>] Drexler, E. J.; Field, K. W. _J. Chem. Educ._ (1976), **53**, 392]
-
-???
-
-- An even more striking example is that of tautomeric equilibria.
-  For example, the keto-enol equilibrium of \\(\beta\\)-diketones and 4-pyridone
-- The enol form of \\(\beta\\)-diketones can form intramolecular hydrogen bond,
-  which lowers its dipole moment.
-- The keto form of \\(\beta\\)-diketones can form hydrogen bond with the
-  solvent and has also a higher dipole moment.
-
----
-layout: false
-class: split-50-50
-
-## Kinetics
-
-.column[
-<p style="text-align:left;"><img src="images/kinetics.svg" style="width: 80%"></p>
-<p style="clear: both;">
-Solvent effects on reaction rates
- - _Static_
- - _Dynamic_
-]
-.column[
-<p style="text-align:right;"><img src="images/nucleophilic.png" style="width: 50%"></p>
-<p style="clear: both;">
-]
-
-???
-
-Solvent effects on reaction rates
- - _Static_: differential solvation of reactants and activated complex.
-   This modifies the activation free energy, enthalpy and entropy, affecting the rate.
-   The basic assumption is that of equilibrium between reactants and activated
-   complex, which in turn means that solvent orientational relaxation happens
-   on time scales shorter than the activation process.
- - _Dynamic_: anything that happens because the assumption of fast
-   orientational relaxation breaks down. In this case the solvent actually
-   participates in the reaction.
-
----
-layout: false
-class: split-50-50
-
-## Spectroscopy
-
-.column[
-<p style="text-align:center;"><img src="images/td-stokes.png" style="width: 80%"></p>
-<p style="clear: both;">
-]
-.column[
-<p style="text-align:center;"><img src="images/td-fluorescence.svg" style="width: 50%"></p>
-
-Time-dependent Stokes shift
-`
-$$
-S_\nu(t) = \frac{\nu(t) - \nu(\infty)}{\nu(0) - \nu(\infty)}
-$$
-`
-<p style="clear: both;">
-]
-
-UV-Vis absorption and emission shifts are probes for
-  - Solvent and solvation dynamics
-  - Time-evolution of solute-solvent interactions
-  - Specific solute-solvent interactions
-
-???
-
----
-layout: false
-
-## The Curse of Dimensionality
+## Theories and Models. The Curse of Dimensionality
 
 .left-column[
 - Dynamics
@@ -534,7 +443,7 @@ Computational models for solvation
     - Monte Carlo
 
  3. Supermolecular cluster models
- 4. Quantum/classical multiscale models
+ 4. <font color="red"> Quantum/classical multiscale models </font>
 ]
 
 ???
@@ -565,7 +474,7 @@ Computational models for solvation
 layout: false
 class: split-50-50
 
-## Multiscale models.red[<sup>3</sup>]
+## Quantum/Classical Multiscale Models.red[<sup>3</sup>]
 
 - Use **quantum** and **classical** physics together:
   * quantum for chemically relevant subsystem
@@ -580,7 +489,7 @@ class: split-50-50
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
+.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
 
 ???
 
@@ -597,19 +506,16 @@ class: split-60-40
   * _classical multipoles_ for the environment
 
 .column[
-- Nonpolarizable MM
-- Polarizable MM
+- Nonpolarizable or polarizable
 - Chemical detail
-- Dispersion and repulsion approximate
 - Statistical sampling and averaging
-- MM region _cutoff radius_?
 ]
 .column[
 <p style="text-align:right;"><img src="images/pyridine+water_12AA_QMMM.png" style="width: 40%"></p>
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed. Engl._, __48__, 1198, (2009)]
+.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
 
 ???
 
@@ -631,9 +537,7 @@ class: split-60-40
 
 .column[
 - **Exact** electrostatics
-- Self-consistent polarization
 - **No** chemical detail
-- Dispersion and repulsion approximate
 - Statistically averaged _by construction_
 ]
 .column[
@@ -648,7 +552,11 @@ class: split-60-40
 ---
 class: center, middle, inverse
 
-#Three _Not - So - Easy_ Pieces
+# Three _Not-So-Easy_ Pieces
+
+???
+
+Three _Not-So-Easy_ Pieces in Solvation Chemistry
 
 ---
 layout: false
@@ -671,7 +579,7 @@ class: split-40-60
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>5</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed Engl._ (2013), __52__, 7583]
+.footnote[.red[<sup>5</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed._ (2013), __52__, 7583]
 
 ---
 layout: false
@@ -750,12 +658,11 @@ layout: false
 
 ## What Is Solvatochromism?.red[<sup>7</sup>]
 
-### Solvent polarity strikingly changes UV/Vis bands
+### Solvatochromic shifts as empirical measures of _polarity_
 
-<p style="text-align:center;"><img src="images/solvatochromism.png" style="width: 40%"></p>
+<p style="text-align:center;"><img src="images/solvatochromism.png" style="width: 60%"></p>
 <p style="clear: both;">
 
-Solvatochromic shifts as empirical measures of _polarity_
   - Intermolecular forces
   - Solvent and solvation dynamics
   - Charge-transfer excitations
@@ -959,8 +866,12 @@ layout: false
 ]
 
 ---
-
 layout: false
+
+## General References
+- Reichardt, C.; Welton, T. _Solvents and Solvent Effects in Organic Chemistry_; Wiley, (2010)
+- Hansen, J. P.; McDonald, I. R. _Theory of Simple Liquids_; Elsevier Science, (2013)
+- Mennucci, B.; Cammi, R. _Continuum Solvation Models in Chemical Physics_; Wiley, (2008)
 
 ## Acknowledgements
 

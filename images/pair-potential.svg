@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="pair-potential.svg"
-   inkscape:export-filename="/home/roberto/Documents/Presentations/trial-lecture/images/el+dis-pair-potential.png"
+   inkscape:export-filename="/home/roberto/Documents/Presentations/trial-lecture/images/rep+el+dis-pair-potential.png"
    inkscape:export-xdpi="199"
    inkscape:export-ydpi="199">
   <sodipodi:namedview
@@ -26,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3902192"
-     inkscape:cx="88.102429"
+     inkscape:zoom="1.7727627"
+     inkscape:cx="60.880542"
      inkscape:cy="213.78451"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -142,7 +142,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -318,20 +318,15 @@
     <text
        sodipodi:linespacing="125%"
        id="text7152-7"
-       y="565.13544"
-       x="494.88208"
+       y="570.77637"
+       x="454.8316"
        style="font-style:normal;font-weight:normal;font-size:19.18915558px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros';fill:#ff0000;fill-opacity:1;stroke:none;stroke-opacity:1"
-         id="tspan7160-2"
-         y="565.13544"
-         x="494.88208"
-         sodipodi:role="line">Electrostatic</tspan><tspan
          id="tspan7182"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros';fill:#ff0000;fill-opacity:1;stroke:none;stroke-opacity:1"
-         y="589.12189"
-         x="494.88208"
-         sodipodi:role="line">Dispersion</tspan></text>
+         y="570.77637"
+         x="454.8316"
+         sodipodi:role="line">Electrostatic + Dispersion</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text7152-7-3"
