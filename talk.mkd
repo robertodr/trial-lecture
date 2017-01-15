@@ -881,6 +881,10 @@ __Luca Frediani__ .cite[CTCC, University of Tromsø]
 
 __Maarten Beerepoot__ .cite[CTCC, University of Tromsø]
 
+__Radovan Bast__ .cite[University of Tromsø]
+
+__Peter Schwerdtfeger__ .cite[Massey University]
+
 ---
 name: last-page
 template: inverse
