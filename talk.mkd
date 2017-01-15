@@ -875,9 +875,11 @@ layout: false
 
 ## Acknowledgements
 
-- Glenn Morello (CTCC)
-- Luca Frediani (CTCC)
-- Maarten Beerepoot (CTCC)
+__Glenn Morello__ .cite[CTCC, University of Tromsø]
+
+__Luca Frediani__ .cite[CTCC, University of Tromsø]
+
+__Maarten Beerepoot__ .cite[CTCC, University of Tromsø]
 
 ---
 name: last-page
