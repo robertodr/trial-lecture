@@ -78,7 +78,7 @@ layout: false
 <p style="text-align:center;"><img src="images/james-bond-cocktail.png" style="width: 100%"></p>
 <p style="clear: both;">
 
-.footnote[.red[<sup>1</sup>] Eckelmann, J.; Lüning, U. _Chem. unserer Zeit_ (2009), __43__, 210]
+.footnote-cite[.red[<sup>1</sup>] Eckelmann, J.; Lüning, U. _Chem. unserer Zeit_ (2009), __43__, 210]
 
 ???
 
@@ -94,7 +94,7 @@ class: split-50-50
 ## The Liquid Phase
 
 .column[
-Liquids and solutions:
+Liquids and solutions
 - Partially ordered systems
 - High mobility
 - Dynamical picture
@@ -103,7 +103,7 @@ Liquids and solutions:
 <p style="text-align:center;"><img src="images/Rdf_schematic.jpg" style="width: 30%"></p>
 <p style="clear: both;">
 ]
-<p style="text-align:center;"><img src="images/MD.gif" style="width: 50%"></p>
+<p style="text-align:center;"><img src="images/MD.gif" style="width: 60%"></p>
 <p style="clear: both;">
 
 ???
@@ -118,7 +118,7 @@ class: split-50-50
 
 ## Meet The Radial Distribution Function
 
-<p style="text-align:center;"><img src="images/RDF.gif" style="width: 40%"></p>
+<p style="text-align:center;"><img src="images/RDF.gif" style="width: 50%"></p>
 <p style="clear: both;">
 
 .column[
@@ -234,7 +234,7 @@ layout: false
 ## Microscopic and Macroscopic Views
 
 
-<p style="text-align:center;"><img src="images/pyridine+water_12AA_QM.png" style="width: 25%"></p>
+<img src="images/pyridine+water_12AA_QM.png" style="float: center; width: 40%; margin-left: 30%; margin-top: -0.5em; margin-bottom: -2.0em">
 <p style="clear: both;">
 
 
@@ -311,7 +311,7 @@ class: split-50-50
 \end{align}
 $$`
 
-Temperature-dependent solvent effect:
+Temperature-dependent solvent effect
  - Cooperative
  - Enthalpy-controlled
  - Entropy-controlled
@@ -393,7 +393,7 @@ Aspects computational models need to capture
 - Average nature of observables
 - Variety of interactions
 
-<p style="text-align:center;"><img src="images/solvation-dynamics.gif" style="width: 45%"></p>
+<p style="text-align:center;"><img src="images/solvation-dynamics.gif" style="width: 65%"></p>
 <p style="clear: both;">
 
 ???
@@ -423,7 +423,7 @@ Aspects computational models need to capture
 ---
 layout: false
 
-## Theories and Models. The Curse of Dimensionality
+## Theories, Models and the Curse of Dimensionality
 
 .left-column[
 - Dynamics
@@ -476,7 +476,7 @@ class: split-50-50
 
 ## Quantum/Classical Multiscale Models.red[<sup>3</sup>]
 
-- Use **quantum** and **classical** physics together:
+- Use **quantum** and **classical** physics together
   * quantum for chemically relevant subsystem
   * classical for the environment
 
@@ -489,7 +489,7 @@ class: split-50-50
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
+.footnote-cite[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
 
 ???
 
@@ -501,7 +501,7 @@ layout: false
 class: split-60-40
 ## QM/MM.red[<sup>3</sup>]
 
-- Use **quantum** and **classical** physics together:
+- Use **quantum** and **classical** physics together
   * quantum for chemically relevant subsystem
   * _classical multipoles_ for the environment
 
@@ -515,7 +515,7 @@ class: split-60-40
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
+.footnote-cite[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
 
 ???
 
@@ -531,7 +531,7 @@ class: split-60-40
 
 ## QM/Continuum.red[<sup>4</sup>]
 
-- Use **quantum** and **classical** physics together:
+- Use **quantum** and **classical** physics together
   * quantum for chemically relevant subsystem
   * _continuum dielectric_ for the environment
 
@@ -545,7 +545,7 @@ class: split-60-40
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>4</sup>] J. Tomasi, B. Mennucci, R. Cammi, _Chem. Rev._, __105__, 2999, (2005)]
+.footnote-cite[.red[<sup>4</sup>] J. Tomasi, B. Mennucci, R. Cammi, _Chem. Rev._, __105__, 2999, (2005)]
 
 ???
 
@@ -560,14 +560,10 @@ Three _Not-So-Easy_ Pieces in Solvation Chemistry
 
 ---
 layout: false
-class: split-40-60
+class: split-70-30
 
 ## Why Is Mercury Liquid?.red[<sup>5</sup>]
 
-.column[
-<p style="text-align:center;"><img src="images/Hg-periodic.svg" style="width: 40%"></p>
-<p style="clear: both;">
-]
 .column[
 #### Simulating melting of mercury
  - Many-body interactions
@@ -578,32 +574,34 @@ class: split-40-60
  - Diatomic-In-Molecule (DIM) semi-empirical Hamiltonian
 <p style="clear: both;">
 ]
+.column[
 
-.footnote[.red[<sup>5</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed._ (2013), __52__, 7583]
+<img src="images/Hg-periodic.svg" style="float: left; width: 22%; margin-right: 1%; margin-top: -4.5em;">
+<p style="clear: both;">
+]
+
+.footnote-cite[.red[<sup>5</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed._ (2013), __52__, 7583]
 
 ---
 layout: false
 class: split-40-60
 
-## Failure of Many-Body Expansions
+## Many-Body Expansions, Anyone?
 
-.column[
-<p style="text-align:center;"><img src="images/Hg-cluster-melting.png" style="width: 90%"></p>
+**Many-body expansions _utterly fail_ to converge**
+
+<p style="text-align:center;"><img src="images/Hg-cluster-melting.png" style="width: 50%"></p>
 <p style="clear: both;">
-]
-.column[
-
-#### Many-body expansions _utterly fail_ to converge
-- Small clusters, van der Waals
-- Medium-sized clusters, covalent
-- Bulk, metallic
-]
 
 ???
 
+- Small clusters, van der Waals
+- Medium-sized clusters, covalent
+- Bulk, metallic
+
 ---
 layout: false
-class: split-40-60
+class: split-50-50
 
 ## Relativity and the DIM Hamiltonian.red[<sup>6</sup>]
 
@@ -614,44 +612,46 @@ class: split-40-60
 .column[
 `
 $$
-H = \sum_{i < j}^N H^{(ij)}(\theta_{ij}, \phi_{ij}) - (N-2)H^{\text{atom}} + V_\mathrm{SO}
+H = \sum_{i < j}^N H^{(ij)} - (N-2)H^{\text{atom}} + V_\mathrm{SO}
 $$
 `
 #### Ground state
-  - Relativistic and non-relativistic similar
+
+Relativistic and non-relativistic similar
 
 #### Excited states
-  - Non-relativistic \\(2\,\,\mathrm{eV}\\) lower than relativistic
-  - Larger off-diagonal interactions
+
+Non-relativistic lower than relativistic
 
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>6</sup>] Kitamura, H. _Chem. Phys. Lett._ (2006), **425**, 205]
+.footnote-cite[.red[<sup>6</sup>] Kitamura, H. _Chem. Phys. Lett._ (2006), **425**, 205]
 
 ???
 
 - DIM: an approximation at the CI level of theory. The CI matrix is expressed
   in a valence-bond many-electron basis for the diatomic building pairs
+- Nonrelativistic DIM Hamiltonian predicts stronger GS-ES mixing
 
 ---
 layout: false
 
-## Monte Carlo Simulations in Bulk
+## Bulk Monte Carlo Simulations
 
 `
 $$
 \Delta_\mathrm{R}T_\mathrm{m} = -105\,\,\mathrm{K}
 $$
 `
-<p style="text-align:center;"><img src="images/Hg-bulk-melting.png" style="width: 60%"></p>
+<p style="text-align:center;"><img src="images/Hg-bulk-melting.png" style="width: 90%"></p>
 <p style="clear: both;">
+
+???
 
 - Mercury is indeed liquid because of relativity
 - Room-temperature density also reproduced
 - Scalar relativistic effect
-
-???
 
 ---
 layout: false
@@ -668,7 +668,7 @@ layout: false
   - Charge-transfer excitations
   - Hydrogen bonding
 
-.footnote[.red[<sup>7</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
+.footnote-cite[.red[<sup>7</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
 
 ???
 
@@ -770,15 +770,15 @@ class: split-50-50
 <p style="clear: both;">
 ]
 .column[
-A versatile coupling reaction:
-1. Easily prepared starting materials
-2. Useful in asymmetric syntheses
-3. Highly functionalized product
-4. Organocatalyzed
+**A versatile coupling reaction**
+- Easily prepared starting materials
+- Useful in asymmetric syntheses
+- Highly functionalized product
+- Organocatalyzed
 <p style="clear: both;">
 ]
 
-.footnote[.red[<sup>8</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811]
+.footnote-cite[.red[<sup>8</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811]
 
 ---
 layout: false
@@ -789,7 +789,7 @@ class: split-50-50
 <p style="text-align:center;"><img src="images/MBH_elimination_mechanism.png" style="width: 100%"></p>
 <p style="clear: both;">
 
-Plata and Singleton experimental arsenal:
+Plata and Singleton's **experimental arsenal**
 - Intermediates profiling
 - Kinetic studies
 - Isotope incorporation
