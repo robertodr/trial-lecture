@@ -474,7 +474,7 @@ Computational models for solvation
 layout: false
 class: split-50-50
 
-## Quantum/Classical Multiscale Models.red[<sup>3</sup>]
+## Quantum/Classical Multiscale Models.red[<sup>2</sup>]
 
 - Use **quantum** and **classical** physics together
   * quantum for chemically relevant subsystem
@@ -489,7 +489,7 @@ class: split-50-50
 <p style="clear: both;">
 ]
 
-.footnote-cite[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
+.footnote-cite[.red[<sup>2</sup>] Senn, H. M.; Thiel, W. _Angew. Chem. Int. Ed._ (2009), __48__, 1198]
 
 ???
 
@@ -499,7 +499,7 @@ class: split-50-50
 ---
 layout: false
 class: split-60-40
-## QM/MM.red[<sup>3</sup>]
+## QM/MM.red[<sup>2</sup>]
 
 - Use **quantum** and **classical** physics together
   * quantum for chemically relevant subsystem
@@ -515,7 +515,7 @@ class: split-60-40
 <p style="clear: both;">
 ]
 
-.footnote-cite[.red[<sup>3</sup>] H. M. Senn, W. Thiel, _Angew. Chem. Int. Ed._, __48__, 1198, (2009)]
+.footnote-cite[.red[<sup>2</sup>] Senn, H. M.; Thiel, W. _Angew. Chem. Int. Ed._ (2009), __48__, 1198]
 
 ???
 
@@ -529,7 +529,7 @@ class: split-60-40
 layout: false
 class: split-60-40
 
-## QM/Continuum.red[<sup>4</sup>]
+## QM/Continuum.red[<sup>3</sup>]
 
 - Use **quantum** and **classical** physics together
   * quantum for chemically relevant subsystem
@@ -545,7 +545,7 @@ class: split-60-40
 <p style="clear: both;">
 ]
 
-.footnote-cite[.red[<sup>4</sup>] J. Tomasi, B. Mennucci, R. Cammi, _Chem. Rev._, __105__, 2999, (2005)]
+.footnote-cite[.red[<sup>3</sup>] Tomasi, J.; Mennucci, B.; Cammi, R. _Chem. Rev._ (2005), __105__, 2999]
 
 ???
 
@@ -562,7 +562,7 @@ Three _Not-So-Easy_ Pieces in Solvation Chemistry
 layout: false
 class: split-70-30
 
-## Why Is Mercury Liquid?.red[<sup>5</sup>]
+## Why Is Mercury Liquid?.red[<sup>4</sup>]
 
 .column[
 #### Simulating melting of mercury
@@ -580,7 +580,7 @@ class: split-70-30
 <p style="clear: both;">
 ]
 
-.footnote-cite[.red[<sup>5</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed._ (2013), __52__, 7583]
+.footnote-cite[.red[<sup>4</sup>] Calvo, F.; Pahl, E.; Wormit, M.; Schwerdtfeger, P. _Angew. Chem. Int. Ed._ (2013), __52__, 7583]
 
 ---
 layout: false
@@ -603,7 +603,7 @@ class: split-40-60
 layout: false
 class: split-50-50
 
-## Relativity and the DIM Hamiltonian.red[<sup>6</sup>]
+## Relativity and the DIM Hamiltonian.red[<sup>5</sup>]
 
 .column[
 <p style="text-align:center;"><img src="images/Hg-RvsNR-PESs.png" style="width: 90%"></p>
@@ -626,7 +626,7 @@ Non-relativistic lower than relativistic
 <p style="clear: both;">
 ]
 
-.footnote-cite[.red[<sup>6</sup>] Kitamura, H. _Chem. Phys. Lett._ (2006), **425**, 205]
+.footnote-cite[.red[<sup>5</sup>] Kitamura, H. _Chem. Phys. Lett._ (2006), **425**, 205]
 
 ???
 
@@ -656,7 +656,7 @@ $$
 ---
 layout: false
 
-## What Is Solvatochromism?.red[<sup>7</sup>]
+## What Is Solvatochromism?.red[<sup>6</sup>]
 
 ### Solvatochromic shifts as empirical measures of _polarity_
 
@@ -668,7 +668,7 @@ layout: false
   - Charge-transfer excitations
   - Hydrogen bonding
 
-.footnote-cite[.red[<sup>7</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
+.footnote-cite[.red[<sup>6</sup>] Marini, A.; Muñoz-Losa, A.; Biancardi, A.; Mennucci, B. _J. Phys. Chem. B_ (2010), __114__, 17128]
 
 ???
 
@@ -760,7 +760,7 @@ layout: false
 layout: false
 class: split-50-50
 
-## The Morita-Baylis-Hillman Reaction.red[<sup>8</sup>]
+## The Morita-Baylis-Hillman Reaction.red[<sup>7</sup>]
 
 <p style="text-align:center;"><img src="images/MBH-reagents-products.png" style="width: 70%"></p>
 <p style="clear: both;">
@@ -778,7 +778,7 @@ class: split-50-50
 <p style="clear: both;">
 ]
 
-.footnote-cite[.red[<sup>8</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811]
+.footnote-cite[.red[<sup>7</sup>] Plata, R. E.; Singleton, D. A. _J. Am. Chem. Soc._ (2015), __137__, 3811]
 
 ---
 layout: false
